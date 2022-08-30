@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root{
+    --Main-color:   #263b56;
+}
+
+html{ box-sizing: border-box; }
+
+*, *::before, *::after{ box-sizing: inherit; }
+
+body{ 
+    background-color: var(--Main-color);
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    justify-content: center;
+}
+
+h1{
+    font-size: 1.8rem;
+    font-weight: 600; 
+}
+
+h2{ margin: 0; }
+
+p{ margin: .5rem; }
+
+p span{ font-weight: 600; }
+
+.container{
+    margin: 2rem auto;
+    width: 90%;
+}
+
+.card{
+    align-items: center;
+    background-color:  #587390;
+    border-radius: .6rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title{
+    margin: 2rem 0;
+}
+.charactersGrid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding-bottom: 4rem;
+}
+
+.characterCard{
+    background-color: var(--Main-color);
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    overflow: hidden;
+    position: relative;
+}
+
+.characterCard--img{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.characterCard--img img{ width: 100%; }
+
+.characterCard--img:hover{ opacity: 60%; }
+
+.characterCard--description{
+    color: white;
+    padding: .5rem 2rem;
+    text-align: center;
+}
+
+.character--info{
+    display: flex;    
+    flex-direction: column;
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+    .characterCard{
+        flex-direction: row;
+        height: 15rem;
+        width: 35rem;
+    }
+
+    .characterCard--description{ align-self: center; }
+
+    .characterCard--img{ margin: 0; }
+    
+    .characterCard--img img{ max-width: 100%; } 
+}
+
+.footer{
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.footer a{
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.footer a:hover{ color: var(--Light-gray); }
+
+.footer a:visited{
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
