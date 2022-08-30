@@ -1,1 +1,1 @@
-#Rick and Morthy React API
+# Rick and Morthy React API
